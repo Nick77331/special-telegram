@@ -3,29 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project Page</title>
+    <title>BlooketBot - Ultimate Blooket Utilities & Tools</title>
+    <!-- Tailwind CSS for Modern Styling -->
+    <script src="https://jsdelivr.net"></script>
+    <!-- Google Fonts for Gaming Aesthetic -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            font-family: 'Poppins', sans-serif;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        .heading-font {
+            font-family: 'Fredoka', sans-serif;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Welcome to My GitHub Pages Site</h1>
-        <p>This is a standard template for hosting content on GitHub.</p>
-    </div>
+<body class="bg-slate-900 text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Navigation Bar -->
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="heading-font text-2xl font-bold text-indigo-400 tracking-wide">
+                Blooket<span class="text-amber-400">Bot</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#features" class="hover:text-indigo-400 transition">Features</a>
+                <a href="#status" class="hover:text-indigo-400 transition">Bot Status</a>
+                <a href="#faq" class="hover:text-indigo-400 transition">FAQ</a>
+            </nav>
+            <a href="https://github.com" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-sm font-semibold px-4 py-2 rounded-lg transition shadow-lg shadow-indigo-600/20">
+                View on GitHub
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex-grow">
+        <section class="max-w-4xl mx-auto text-center px-4 py-20 md:py-32">
+            <span class="inline-block bg-indigo-500/10 text-indigo-400 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-4 border border-indigo-500/20">
+                🚀 Version 2.0 Now Live
+            </span>
+            <h1 class="heading-font text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Level Up Your <span class="text-indigo-400">Blooket</span> Experience
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+                An open-source automation utility tool built for Blooket enthusiasts. Automate study sessions, track statistics, and manage your Blooks effortlessly.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <button onclick="alert('Bot starting... Replace with your custom JS function!')" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition shadow-lg shadow-amber-500/20 transform hover:-translate-y-0.5">
+                    Launch BlooketBot
+                </button>
+                <a href="#features" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 font-semibold px-8 py-4 rounded-xl transition border border-slate-700">
+                    Learn More
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section id="features" class="max-w-6xl mx-auto px-4 py-16 border-t border-slate-800">
+            <h2 class="heading-font text-2xl md:text-3xl font-bold text-center mb-12">Powerful Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition">
+                    <div class="w-12 h-12 bg-indigo-500/10 text-indigo-400 rounded-xl flex items-center justify-center font-bold text-xl mb-4">⚡</div>
+                    <h3 class="font-bold text-lg mb-2">Ultra Fast Performance</h3>
+                    <p class="text-slate-400 text-sm">Lightweight scripts designed to run instantly in your browser without causing lag or screen freezes.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center font-bold text-xl mb-4">🛡️</div>
+                    <h3 class="font-bold text-lg mb-2">Safe & Open Source</h3>
+                    <p class="text-slate-400 text-sm">Our completely transparent codebase is open for public review on GitHub to guarantee maximum safety.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition">
+                    <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center font-bold text-xl mb-4">🔄</div>
+                    <h3 class="font-bold text-lg mb-2">Auto Updates</h3>
+                    <p class="text-slate-400 text-sm">Blooket updates frequently. Our automation bot adapts instantly to bypass broken UI changes seamlessly.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-500 text-xs py-8 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+                &copy; 2026 BlooketBot. Open source under the MIT License.
+            </div>
+            <div class="text-center md:text-right max-w-md text-slate-600">
+                Disclaimer: BlooketBot is an independent open-source project. It is not affiliated with, authorized, maintained, or endorsed by Blooket or any of its affiliates.
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
